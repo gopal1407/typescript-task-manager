@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# Task Management App (TypeScript + React + Auth0)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A secure, user-specific task management application built with **TypeScript**, **React**, **Auth0**, and **Context API**. Users can create, edit, delete, and view tasks specific to their Auth0 profile.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔐 User authentication with Auth0
+- 🗂️ Task Dashboard (per-user)
+- 📝 Create and Edit tasks
+- 🧾 View task details
+- 🧠 Built using Context API + TypeScript
+- 💾 Tasks persisted in localStorage
+- 🔒 Protected routes (PrivateRoute.tsx)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Tech Stack
 
-### `npm test`
+- React
+- TypeScript
+- Auth0
+- Context API
+- React Router
+- localStorage (for persistence)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+\`\`\`
+src/
+├── components/         # All pages (Dashboard, TaskForm, Details)
+├── context/            # Task context for global state
+├── interfaces/         # TypeScript interfaces
+├── App.tsx             # Route definitions
+├── index.tsx           # Entry point with Auth0Provider
+\`\`\`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Installation
 
-### `npm run eject`
+\`\`\`bash
+git clone https://github.com/gopal1407/typescript-task-manager.git
+cd typescript-task-manager
+npm install
+npm start
+\`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> Make sure to configure your own Auth0 domain and clientId in `index.tsx`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🌐 Auth0 Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Create an Auth0 Single Page App
+2. Add allowed URLs: `http://localhost:3000`
+3. Get your **domain** and **clientId**
+4. Paste them into `index.tsx`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Future Enhancements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ✅ Firebase/MongoDB backend
+- ✅ Responsive styling
+- ✅ Task export (CSV/JSON)
+- ✅ Task sharing or collaboration
+
+---
+
+## 📄 License
+
+MIT © 2025 Your Name
