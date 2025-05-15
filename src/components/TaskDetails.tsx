@@ -30,7 +30,7 @@ const TaskDetails: React.FC = () => {
       <p><strong>Status:</strong> {task.completed ? "✅ Completed" : "❌ Not Completed"}</p>
       <p><strong>Assigned To:</strong> {user.email}</p>
 
-      <button onClick={() => navigate(`/tasks/${task.id}`)}>✏️ Edit Task</button>
+      <button onClick={() => navigate(`/tasks/edit/${task.id}`)}>✏️ Edit Task</button>
       <button onClick={handleDelete} style={{ marginLeft: "10px" }}>🗑️ Delete Task</button>
     </div>
   );

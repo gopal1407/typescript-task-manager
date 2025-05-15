@@ -28,7 +28,7 @@ const TaskDashboard: React.FC = () => {
               <strong>{task.title}</strong> <br />
               <em>{task.description}</em> <br />
               <span>Status: {task.completed ? "✅ Done" : "❌ Pending"}</span> <br />
-              <button onClick={() => navigate(`/tasks/${task.id}`)}>✏️ Edit</button>
+              <button onClick={() => navigate(`/tasks/edit/${task.id}`)}>✏️ Edit</button>
               <button onClick={() => deleteTask(task.id)} style={{ marginLeft: "10px" }}>🗑️ Delete</button>
             </li>
           ))}

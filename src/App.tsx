@@ -14,13 +14,13 @@ const App: React.FC = () => (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<PrivateRoute component={TaskDashboard} />} />
-        <Route path="/tasks/new" element={<PrivateRoute component={TaskForm} />} />
-        <Route path="/tasks/edit/:id" element={<PrivateRoute component={TaskForm} />} />
-        <Route path="/tasks/:id" element={<PrivateRoute component={TaskDetails} />} />
-        <Route path="/profile" element={<PrivateRoute component={Profile} />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
+  <Route path="/" element={<PrivateRoute component={TaskDashboard} />} />
+  <Route path="/tasks/new" element={<PrivateRoute component={TaskForm} />} />
+  <Route path="/tasks/edit/:id" element={<PrivateRoute component={TaskForm} />} />
+  <Route path="/tasks/:id" element={<PrivateRoute component={TaskDetails} />} />
+  <Route path="/profile" element={<PrivateRoute component={Profile} />} />
+  <Route path="/login" element={<Login />} />
+</Routes>
     </Router>
   </TaskProvider>
 );
