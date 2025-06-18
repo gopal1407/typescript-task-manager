@@ -37,22 +37,22 @@ const TaskForm: React.FC = () => {
   // Handle form submit
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (!task.title || !task.description) return;
-
+  
     if (id) {
-      updateTask(task);
+      updateTask(task); // ✅ This updates the task
     } else {
       const newTask = {
         ...task,
         id: Date.now(),
-        userId: user?.sub || "", // ensure userId is set on new task
+        userId: user?.sub || "",
       };
       addTask(newTask);
     }
-
+  
     navigate("/");
-  };
+  };  
 
   return (
     <div>

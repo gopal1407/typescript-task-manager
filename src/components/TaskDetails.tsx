@@ -21,6 +21,7 @@ const TaskDetails: React.FC = () => {
     deleteTask(task.id);
     navigate("/");
   };
+  navigate(`/tasks/edit/${task.id}`);
 
   return (
     <div style={{ padding: "20px" }}>
